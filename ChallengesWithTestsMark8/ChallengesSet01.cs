@@ -6,37 +6,71 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            throw new NotImplementedException();
+            if(num1 == num2)
+           {
+                return true;
+            }
+            else
+            {
+                return false;
+            }    
         }
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
-        }
+            var minus = minuend - subtrahend;
+            return minus;
+        } 
+         
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            var cg = number1 + number2;
+            return cg;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            if(number1 < number2)
+            {
+                return number1;
+            }
+            else
+            {
+                return number2;
+            }
         }
+       
+        
+        
+         
+        
+        
+
+        
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            long gg = factor1 * factor2;
+            return gg;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            if (nameOfPerson == "")
+            {
+                return ("Hello!");
+            }
+            else
+            {
+                return ("Hello, " + nameOfPerson + "!");
+            }
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            string x = "HEY!";
+            return x;
         }
     }
 }
