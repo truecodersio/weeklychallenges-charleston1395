@@ -96,24 +96,15 @@ namespace ChallengesWithTestsMark8
             return MyArray;
 
 
-
-
-
-
-
-
-
         }
-
-
-
-
-
 
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            words = Array.ConvertAll(words, d => d.ToUpper());  
+            for (int i = 0; i < words.Length; i++)
+            {
+                words[i] = words[i].ToUpper();
+            }  
         }
            
 
